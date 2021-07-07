@@ -67,7 +67,7 @@ ckan_dataset = {
 from frictionless_ckan_mapper import ckan_to_frictionless as converter
 
 # convert to frictionless
-frictionless_package = converter.dataset(ckan_dict)
+frictionless_package = converter.dataset(ckan_datase)
 
 print(frictionless_package)
 ```
@@ -80,9 +80,9 @@ frictionless = {
   'path': "https://datahub.io/data.csv"
 }
 
-from frictionless_ckan_mapper import frictionless_to_ckan as f2c
+from frictionless_ckan_mapper import frictionless_to_ckan as converter
 
-ckanout = f2c.dataset(frictionless)
+ckanout = converter.package(frictionless)
 
 print(ckanout)
 ```
